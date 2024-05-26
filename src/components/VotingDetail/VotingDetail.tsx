@@ -840,7 +840,7 @@ export const VotingDetail: React.FC = () => {
 };
 export async function getData(
   userAddress: string
-): Promise<SearchCandidate | null> {
+): Promise<SearchCandidate | null> { 
   try {
     const lowerCaseAddress = userAddress.toLowerCase();
     const res = await fetch(
